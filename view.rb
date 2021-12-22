@@ -4,4 +4,10 @@ class View
     print '>'
     gets.chomp
   end
+
+  def print_tasks(tasks)
+    tasks.each_with_index do |task, index|
+      puts "#{index + 1}. #{task.title}"
+    end
+  end
 end
