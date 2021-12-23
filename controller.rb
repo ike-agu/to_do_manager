@@ -12,8 +12,9 @@ class Controller
     @task_list.add(new_task)
   end
 
-  def list_task
-    all_tasks = @task_list.tasks 
+  def list_tasks
+    all_tasks = @task_list.tasks
+    @view.print_tasks(all_tasks)
   end
 
   def task_completed

@@ -1,5 +1,6 @@
 class TaskList
-  # attr_reader :tasks
+  attr_reader :tasks
+
   def initialize
     @tasks = []
   end
@@ -8,12 +9,8 @@ class TaskList
     @tasks << task
   end
 
-  def all
-    @tasks
-  end
-
   def list_tasks
-    all_tasks = @task_list.all
+    all_tasks = @task_list.tasks
     @view.print_tasks(all_tasks)
   end
 end

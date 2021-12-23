@@ -10,4 +10,4 @@ class View
       puts "#{index + 1}. #{task.title}"
     end
   end
-end
+end 
