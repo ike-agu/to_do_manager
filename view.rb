@@ -10,4 +10,10 @@ class View
       puts "#{index + 1}. #{task.title}"
     end
   end
+
+  def ask_for_task_index
+    puts 'Which task number?'
+    puts '>'
+    gets.chomp
+  end
 end

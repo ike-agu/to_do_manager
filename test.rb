@@ -8,9 +8,10 @@ view = View.new
 controller = Controller.new(view, task_list)
 
 controller.add_task
+controller.add_task
 controller.list_tasks
 controller.add_task
 puts 'The following tasks are to be done:'
 controller.list_tasks
 
-# puts task_list
+ puts task_list

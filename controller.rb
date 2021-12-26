@@ -17,7 +17,8 @@ class Controller
     @view.print_tasks(all_tasks)
   end
 
-  def task_completed
+  def mark_task_as_completed
+    @view.mark_task_as_completed
   end
 
   def delete_task
