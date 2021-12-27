@@ -18,7 +18,8 @@ class Controller
   end
 
   def mark_task_as_completed
-    @view.mark_task_as_completed
+    index = @view.mark_task_as_completed
+    task = @task_list.find(index)
   end
 
   def delete_task

@@ -14,6 +14,6 @@ class View
   def ask_for_task_index
     puts 'Which task number?'
     puts '>'
-    gets.chomp
+    gets.chomp.to_i -  1
   end
 end
