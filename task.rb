@@ -5,7 +5,12 @@ class Task
     @title = title
     @completed = false
   end
+
+  def completed?
+    @completed
+  end
   
-  def mark_task_as_completed
+  def mark_as_complete
+    @completed = true
   end
 end

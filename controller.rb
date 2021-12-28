@@ -17,9 +17,10 @@ class Controller
     @view.print_tasks(all_tasks)
   end
 
-  def mark_task_as_completed
-    index = @view.mark_task_as_completed
+  def mark_task_as_complete
+    index = @view.ask_for_task_index
     task = @task_list.find(index)
+    task.mark_as_complete
   end
 
   def delete_task
