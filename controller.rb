@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'task'
 
 class Controller
@@ -23,6 +25,5 @@ class Controller
     task.mark_as_complete
   end
 
-  def delete_task
-  end
+  def delete_task; end
 end

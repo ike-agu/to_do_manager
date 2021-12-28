@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Task
   attr_reader :title
 
@@ -9,7 +11,7 @@ class Task
   def completed?
     @completed
   end
-  
+
   def mark_as_complete
     @completed = true
   end
